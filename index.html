@@ -1,72 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" >
 
 <head>
   <meta charset="utf-8">
   <title>Lina's Resume</title>
 
-  <style media="screen">
-    body{
-      background-color: #EAF6F6;
+  <style>
+    body {
+      background-color: #f5f5f5;
     }
-    hr{
+    hr {
       border-style: none;
-      border-top-style: dotted;
-      border-color: gray;
-      border-width: thick;
-      height: 0px;
+      border-top: dotted;
+      border-width: 5px;
+      background-color: e3fdfd;
+      color: #fc5185;
       width: 5%;
     }
+    img{
+      border-radius: 50%;
+    }
+    #name_title{
+      color: #3fc1c9;
+      font-family: "Lucida Grande";
+      font-weight: 800;
+    }
+    #cv_title{
+      color: #3fc1c9;
+      font-family: "Lucida Grande";
+      font-weight: 800;
+    }
+    #body_right_column{
+      font-family: Helvetica, sans-serif;
+      line-height: 20px;
+      font-size: 14px;
+    }
 
+    table{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="img/profile.jpg" alt="profile picture"></td>
-      <td>
-        <h1>Lina Baquero</h1>
-        <a href="contact.html">Contact</a>
-        <a href="hobbies.html">Hobbies</a>
-        <p><em>Computer Scientist and Developer</em></p>
-        <p>
-          I am a young Latina currently based in New York with experience in software and application development, cryptography,
-          and algortithm optimization.
-        </p>
-        <p>
-          Some of my hobbies include reading, leadning, running, playing guitar and competitive programming in websites sich as
-          HackerRank and LeetCode.
-        </p>
-      </td>
-    </tr>
-  </table>
-  <hr/>
   <table cellspacing="10px">
-    <tbody>
+    <tbody> 
       <tr>
-        <td>Education</td>
-        <td>Liberty University, BS in Computer Science, 2015</td>
+        <td><img src="img/profile.jpg" alt="profile picture"></td>
+        <td>
+          <h1 id='name_title'>I'm Lina</h1>
+          <a href="contact.html">Contact</a>
+          <a href="hobbies.html">Hobbies</a>
+          <p><em>Computer Scientist and Developer</em></p>
+          <p>
+            I am a young Latina currently based in New York with experience in software and application development, cryptography,
+            and algortithm optimization.
+          </p>
+          <p>
+            Some of my hobbies include reading, leadning, running, playing guitar and competitive programming in websites sich as
+            HackerRank and LeetCode.
+          </p>
+        </td>
       </tr>
       <tr>
-        <td>Skills</td>
-        <td>
+        <td colspan="2"><hr/></td>
+      </tr>
+      <tr>
+        <td id='cv_title' valign="top">Education</td>
+        <td id='body_right_column'>Liberty University, BS in Computer Science, 2015</td>
+      </tr>
+      <tr>
+        <td id='cv_title'  valign="top">What I can do</td>
+        <td id='body_right_column'>
+          <strong>Technical Skills</strong>
           <ul>
-            <strong>Programming</strong>
-            <li>Advanced: C++, Python, SQL</li>
-            <li>Intermediate: HTML/CSS, JavaScript</li>
-            <strong>Software</strong>
-            <li>Git, Linux</li>
-            <strong>Other</strong>
-            <li>Innovator, seeking driven, analytical, collaborative, strong work ethic, passionate about learning </li>
+            <li>Proficient: C++, Python, SQ, Linux, Git, cryptography</li>
+            <li>Familiar: HTML/CSS, JavaScript, Node, cybersecurity</li>
+          </ul>
+          <strong>Hard Skills</strong>
+          <ul>
+            <li>Data Structures, programming logic</li>
+          </ul>
+          <strong>Soft Skills</strong>
+          <ul>  
+            <li>Creative, analytical, communicative, passionate about learning</li>
           </ul>
         </td>
       <tr>
-        <td>Experience</td>
-        <td>
+        <td id='cv_title' valign="top">What I have done</td>
+        <td id='body_right_column'>
+          <strong></string>Fornetix <i>September 2015 – May 2018</i></strong>
           <ul>
-            <strong></string>Global Logistics <i>September 2015 – May 2018</i></strong>
             <li>Design, implement, and test algorithms to generate cryptographic keys (create and add digest, encode, and wrap key) using
 mathematical operations, OpenSSL and Crypto++ functions</li>
             <li>Design, implement and test features related to the storage, management, and distribution of cryptographic keys, and digital certificates in a multithreaded environment using C++, Python, NodeJS</li>
@@ -75,22 +102,30 @@ mathematical operations, OpenSSL and Crypto++ functions</li>
             <li>Automate processes to facilitate server and client communication in a Linux system using Python, Perl, and Bash. </li>
             <li>Write efficient SQL queries and procedures to store and retrieve data from the Key Orchestration™ database.</li>
           </ul>
+          <strong>Wolfram Research</strong>
           <ul>
-            <strong>Wolfram Research</strong>
             <li>Develop an algorithm to find clusters within a cellular automata rule based on patterns using unsupervised machine learning. </li>
             <li>Participate in several Mathematica courses including machine learning, neural networks, image processing, and financial mathematics. </li>
           </ul>
+          <strong>Global Logistics</strong>
           <ul>
-            <strong>Global Logistics</strong>
             <li>Design and implement an internal website to allow the company to view and filter through a list of their operations in an organized manner using frontend technologies including as HTML, CSS, and JavaScript, and jQuery.</li>
             <li>Design and implement database to handle and store international trade and logistic operations using backend technologies such as PHP and SQL.</li>
           </ul>
         </td>
       </tr>
+        <td id='cv_title' id='sub_table' valign="top">Other things</td>
+        <td>
+            I worked on a patent patent: <a href="https://patents.google.com/patent/US20170250799A1/en" target="_blank">Linking Encryption Patent</a>
+        </td>
+      <tr>
+        
+      </tr>
+
     </tbody>
   </table>
 <hr>
-  <a href="https://patents.google.com/patent/US20170250799A1/en" target="_blank">Linking Encryption Patent</a>
+
 </body>
 
 </html>
